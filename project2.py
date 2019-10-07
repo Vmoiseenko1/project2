@@ -40,18 +40,18 @@ if price < 190_000:
                 print('Thank you for your for visiting our shop')
         if not frets == 21:
             print('Your guitar is not found, we are sorry')
-    if color == 'orange':
-        print(question3)
+    exit()
+    if color == 'red':
         frets = int(input())
         if frets == 22:
             print('You should to buy FENDER'
-                  ' TELE THINLINE SUPER DLX RW ORG')
-            print('Characteristics : ')
-            print('price: 183 000 rubles')
-            print('material : rosewood ')
-            print('color : orange')
+                  ' DLX TELE THINLINE MN CAR')
+            print(' Characteristics : ')
+            print('price :  104 000 rubles')
+            print('material: alder')
+            print('color: red')
             print('number of frets : 22')
-            print('hand orientation : right-handed')
+            print('hand orientation : right handed')
             print(question4)
             ans = str(input(''))
             if ans == 'yes':
@@ -59,17 +59,24 @@ if price < 190_000:
                 per_month = price / 24
                 print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
             else:
-                print('Thank you for your for visiting our shop')
+                print('Thank you for your visiting'
+                      ' our shop')
         else:
-            print('Your guitar is not found, we are sorry')
-    else:
-        print('You should to buy FENDER DLX TELE THINLINE MN CAR')
-        print('Characteristics :')
-        print('price:  104 000 rubles')
-        print('material: alder')
-        print('color: red')
+            print('Your guitar is not found, '
+                  'we are sorry')
+    exit()
+if not price >= 190_000 and price > 180_000:
+    print(question3)
+    frets = int(input())
+    if frets == 22:
+        print('You should to buy FENDER'
+              ' TELE THINLINE SUPER DLX RW ORG')
+        print('Characteristics : ')
+        print('price: 183 000 rubles')
+        print('material : rosewood ')
+        print('color : orange')
         print('number of frets : 22')
-        print('hand orientation : right handed')
+        print('hand orientation : right-handed')
         print(question4)
         ans = str(input(''))
         if ans == 'yes':
@@ -78,6 +85,8 @@ if price < 190_000:
             print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
         else:
             print('Thank you for your for visiting our shop')
+    else:
+        print('This guitar does not exist')
 else:
     print(question3)
     frets = int(input())
