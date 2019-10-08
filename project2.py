@@ -16,6 +16,7 @@ if price < 190_000:
     print(question2, 'Natural, orange or red?')
     color = str(input(''))
     if color == 'natural':
+
         print(question3)
         frets = int(input())
         if frets < 21 or frets > 22:
@@ -33,7 +34,8 @@ if price < 190_000:
             ans = str(input(''))
             if ans == 'yes':
                 print(question5)
-                per_month = price / 24
+                cost = 45_600
+                per_month = cost / 24
                 print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles.')
                 print('Thank you for visit')
             else:
@@ -42,6 +44,7 @@ if price < 190_000:
             print('Your guitar is not found, we are sorry')
     exit()
     if color == 'red':
+
         frets = int(input())
         if frets == 22:
             print('You should to buy FENDER'
@@ -56,7 +59,8 @@ if price < 190_000:
             ans = str(input(''))
             if ans == 'yes':
                 print(question5)
-                per_month = price / 24
+                cost1 = 104_000
+                per_month = cost1 / 24
                 print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
             else:
                 print('Thank you for your visiting'
@@ -66,6 +70,7 @@ if price < 190_000:
                   'we are sorry')
     exit()
 if not price >= 190_000 and price > 180_000:
+
     print(question3)
     frets = int(input())
     if frets == 22:
@@ -81,13 +86,15 @@ if not price >= 190_000 and price > 180_000:
         ans = str(input(''))
         if ans == 'yes':
             print(question5)
-            per_month = price / 24
-            print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
+            cost2 = 183_000
+            per_month = cost2 / 24
+            print('Your monthly payment is', '{:.2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
         else:
             print('Thank you for your for visiting our shop')
     else:
         print('This guitar does not exist')
 else:
+
     print(question3)
     frets = int(input())
     if frets == 22:
@@ -102,9 +109,9 @@ else:
         print(question4)
         ans = str(input(''))
         if ans == 'yes':
-            print(question5)
-            per_month = price / 24
-            print('Your monthly payment is', '{.:2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
+            cost3 = 195_000
+            per_month = cost3 / 24
+            print('Your monthly payment is', '{:.2f}'.format(per_month), 'rubles. Thank you for visiting our shop.')
         else:
             print('Thank you for your for visiting our shop')
     else:
