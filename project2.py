@@ -90,6 +90,7 @@ if not price >= 190_000 and price > 180_000:
             print('Thank you for your for visiting our shop')
     else:
         print('This guitar does not exist')
+    exit()
 else:
     print(question3)
     frets = int(input())
